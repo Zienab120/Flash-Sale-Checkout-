@@ -31,3 +31,14 @@ php artisan schedule:work
 
 and to run the job separately:
 php artisan holds:expire
+
+6. Logging
+
+All logs are isolated by module for clarity:
+
+Product:	storage/logs/product.log
+Order:	storage/logs/order.log
+Hold:	storage/logs/holding.log
+Payment:	storage/logs/payment.log
+
+And an isolated log for testing: storage/logs/testing.log
